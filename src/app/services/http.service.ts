@@ -1,10 +1,11 @@
 import axios from "axios";
 import { toast } from "react-toastify";
-import configFile from "../config.json";
 import localStorageService from "./localStorage.service";
 
+
+
 export const http = axios.create({
-  baseURL: configFile.apiEndpoint,
+  baseURL: "http://test-blog-api.ficuslife.com/api/v1/",
 });
 
 http.interceptors.request.use((req) => {

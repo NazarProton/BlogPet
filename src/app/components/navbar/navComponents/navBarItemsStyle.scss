@@ -1,0 +1,36 @@
+@media screen and (max-width: 389px) {
+  .dropdownLittleSize {
+    display: unset;
+  }
+
+  .dropdownBigSize {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 389px) {
+  .dropdownLittleSize {
+    display: none;
+  }
+
+  .dropdownBigSize {
+    display: flex;
+  }
+}
+
+.dropdownBigSize {
+  font-weight: 500;
+  width: 9.5rem;
+  margin: 0.625rem;
+  padding-left: 0;
+  justify-content: space-around;
+}
+
+.dropdownLittleSize {
+  justify-content: start;
+  margin-left: 5%;
+}
+
+.CurrentUserChecker {
+  display: none;
+}

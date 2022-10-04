@@ -1,0 +1,17 @@
+.navSize {
+  min-width: 240px;
+  background-color: rgb(248, 245, 245);
+  margin-bottom: 5%;
+
+  .navElems {
+    height: 50px;
+    margin: 0 2% 0 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .currentUserBlock {
+      display: flex;
+    }
+  }
+}

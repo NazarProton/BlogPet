@@ -1,0 +1,19 @@
+.dropdownStyle {
+  display: flex;
+  align-items: center;
+  margin-top: auto;
+
+  div {
+    font-weight: 600;
+    margin-right: 10px;
+  }
+
+  img {
+    margin-right: 10px;
+    border-radius: 50%;
+  }
+
+  .themeSwitcher {
+    margin-right: 10px;
+  }
+}

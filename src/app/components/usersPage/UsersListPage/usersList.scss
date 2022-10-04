@@ -1,0 +1,60 @@
+.InfoAboutUserBlock {
+  display: flex;
+  justify-content: space-between;
+  min-width: 40%;
+  max-width: 40%;
+
+  .item1 {
+    margin-right: 10px;
+    min-width: 33%;
+  }
+
+  .item2 {
+    margin-right: 10px;
+    min-width: 33%;
+  }
+
+  .item3 {
+    min-width: 33%;
+  }
+}
+
+.container {
+  max-width: 1200px;
+  min-width: 296px;
+  min-height: 100px;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 615px) {
+  .item3 {
+    display: none;
+  }
+}
+
+@media (max-width: 490px) {
+  .container {
+    min-width: 375px;
+  }
+
+  .item2 {
+    display: none;
+  }
+}

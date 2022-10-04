@@ -1,0 +1,34 @@
+.comentsBlockStyle {
+  display: contents;
+
+  .contentContainer {
+    display: flex;
+    justify-content: space-between;
+
+    .answerContainer {
+      display: flex;
+    }
+  }
+
+  .EditLikeBlock {
+    display: flex;
+    align-items: flex-start;
+    align-items: center;
+    margin-right: 10px;
+    justify-content: space-between;
+  }
+}
+
+.dataStyle {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.commentsPagination {
+  display: flex;
+  justify-content: center;
+}
+
+.ant-comment-inner {
+  padding: 0%;
+}

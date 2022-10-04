@@ -1,0 +1,187 @@
+.container_general {
+  min-height: 1000px;
+  min-width: 375px;
+  overflow: hidden;
+}
+
+%DarkBg {
+  background-color: rgb(50, 56, 73);
+}
+
+%BorderColor {
+  background-color: gray;
+}
+
+%ButtonColor {
+  background-color: rgb(50, 56, 73);
+  border-color: gray;
+}
+
+%ButtonColorHover {
+  background-color: rgb(65, 72, 94);
+  border-color: rgb(65, 115, 253);
+}
+
+%DarkBgHover {
+  background-color: rgb(65, 72, 94);
+  border-color: rgb(65, 115, 253);
+}
+
+%textColor {
+  color: white;
+}
+
+.dark {
+
+  input,
+  p,
+  a,
+  div,
+  span,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @extend %textColor;
+  }
+
+  input {
+    background-color: rgb(57, 57, 73);
+  }
+
+  @extend %DarkBg;
+  @extend %textColor;
+
+  .navSize {
+    background-color: rgb(18, 21, 51);
+    @extend %textColor;
+  }
+
+  .container {
+
+    .ant-btn-primary,
+    button,
+    .ant-btn-default,
+    .ant-btn {
+      @extend %ButtonColor;
+    }
+
+    .ant-btn-primary:hover,
+    button:hover,
+    .ant-btn-default:hover,
+    .ant-btn:hover {
+      @extend %ButtonColorHover;
+    }
+
+    .ant-card {
+      @extend %DarkBg;
+      @extend %BorderColor;
+      padding: 0;
+    }
+  }
+
+  .ant-dropdown {
+    .ant-dropdown-menu {
+      background-color: rgb(18, 21, 51);
+
+      .ant-dropdown-menu-item-active {
+        background-color: rgb(25, 31, 80);
+
+        .ant-dropdown-menu-title-content {
+          background-color: rgb(25, 31, 80);
+        }
+      }
+    }
+  }
+
+  .ant-input-affix-wrapper {
+    background-color: rgb(52, 55, 77);
+    @extend %BorderColor;
+  }
+
+  .ant-pagination {
+    .ant-pagination-item {
+      background-color: rgb(57, 57, 73);
+    }
+
+    .ant-pagination-item-active {
+      background-color: rgb(39, 39, 54);
+    }
+
+    .ant-pagination-item-link {
+      background-color: rgb(57, 57, 73);
+
+      .ant-pagination-item-ellipsis {
+        color: white;
+      }
+    }
+  }
+
+  .ant-modal-content {
+    @extend %DarkBg;
+
+    .ant-modal-header {
+      @extend %DarkBg;
+      border-color: rgb(21, 16, 39);
+    }
+
+    .ant-modal-body {
+      padding: 0;
+    }
+  }
+
+  .anticon {
+    @extend %textColor;
+  }
+
+  .ant-input-wrapper {
+    span {
+      background-color: rgb(66, 74, 95);
+    }
+  }
+
+  .ant-card-body {
+    padding-bottom: 10px;
+    @extend %DarkBg;
+    border-bottom: 1px solid;
+    border-color: rgb(73, 73, 73);
+  }
+
+  .formBlock {
+    border-color: gray;
+
+    .ant-card-body {
+      background-color: rgb(87, 89, 107);
+
+      input:-webkit-autofill,
+      input:-webkit-autofill:focus {
+        color-scheme: dark;
+      }
+    }
+  }
+
+  .ant-input-status-error:not(.ant-input-disabled):not(.ant-input-borderless).ant-input,
+  .ant-input-status-error:not(.ant-input-disabled):not(.ant-input-borderless).ant-input:hover {
+    @extend %DarkBg;
+  }
+
+  .ant-input-affix-wrapper-status-error:not(.ant-input-affix-wrapper-disabled):not(.ant-input-affix-wrapper-borderless).ant-input-affix-wrapper,
+  .ant-input-affix-wrapper-status-error:not(.ant-input-affix-wrapper-disabled):not(.ant-input-affix-wrapper-borderless).ant-input-affix-wrapper:hover {
+    @extend %DarkBg;
+  }
+
+  .buttonBlock {
+
+    .ant-btn,
+    ant-btn-default {
+      @extend %ButtonColor;
+    }
+
+    .ant-btn:hover,
+    ant-btn-default:hover {
+      @extend %ButtonColorHover;
+    }
+  }
+}

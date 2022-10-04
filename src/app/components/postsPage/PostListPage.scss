@@ -1,0 +1,43 @@
+.posts_image_img_svg {
+  border: 1px solid rgb(241, 241, 241);
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.modalButton {
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.ant-card-meta {
+  min-height: 75px;
+}
+
+.ant-card-meta-title {
+  max-height: 25px;
+
+  .metaTitle {
+    display: flex;
+
+    .pInMeta {
+      margin-left: 10px;
+    }
+  }
+}
+
+.postsPagination {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.ant-modal-footer {
+  display: none;
+}
+
+.ant-card-meta-description {
+  max-height: 20px;
+}

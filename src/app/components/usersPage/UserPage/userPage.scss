@@ -1,0 +1,16 @@
+.infoBlock {
+  position: relative;
+
+  .EditButton {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: inherit;
+    border: none;
+  }
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+}
